@@ -16,4 +16,34 @@ dog1 = Dog('Abulahab', 5)
 dog1.barking()
 dog1.rename('Abujahel')
 dog1.birthday()
+class Calculator:
+    def __init__(self,a,b ):
+        self.a = a
+        self.b =b
+    def add(self):
+        return self.a + self.b
+    def subtract(self):
+        return self.a - self.b
+number = Calculator(6,7)
+print(number.add())
+#real world calculator
+class Calculator:
+    def __init__(self):
+        self.result = 0
+    def add(self,value):
+        self.result += value
+    def subtract(self):
+        self.result -= value
+    def multiply(self):
+        self.result *= value
+    def divide(self):
+        if value != 0:
+            result /= value
+        else:
+            print("can not divided by zero")
+    def clear(self):
+        self.result = 0
+    def show(self):
+        print(f"Current result:{ self.result}")
+
 
